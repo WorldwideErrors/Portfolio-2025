@@ -4,8 +4,8 @@ import { motion, Variants } from "framer-motion";
 
 interface TitleProps {
   name: string;
-  color?: string; // optional fill color
-  childVariant?: Variants; // optional Framer Motion variants
+  color?: string;
+  childVariant?: Variants;
 }
 
 export default function Title({
@@ -25,8 +25,8 @@ export default function Title({
   if (!svgContent) return null;
 
   const processedSvg = svgContent
-    .replace(/fill="[^"]*"/g, `fill="${color}"`) // replace existing fills
-    .replace(/<path(?![^>]*fill=)/g, `<path fill="${color}"`); // add fill if missing
+    .replace(/fill="[^"]*"/g, `fill="${color}"`)
+    .replace(/<path(?![^>]*fill=)/g, `<path fill="${color}"`);
 
   return (
     <motion.div variants={childVariant}>

@@ -21,7 +21,6 @@ const navContainerVariants: Variants = {
   show: {
     opacity: 1,
     transition: { duration: 0.45, ease: "easeOut", repeat: 0 },
-    
   },
 };
 

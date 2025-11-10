@@ -6,7 +6,7 @@ import Container from '../components/Container';
 import Title from '../components/Title';
 import HomeButton from '../components/HomeButton';
 import Link from 'next/link';
-import { angkor, lux_roman } from '../fonts';
+import { angkor } from '../fonts';
 import Image from 'next/image';
 
 const navContainerVariants: Variants = {

@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import CircularText from '../../components/CircularText';
 
 export default function HomeButton() {
@@ -9,7 +8,6 @@ export default function HomeButton() {
     onHover="speedUp"
     spinDuration={20}
     className="custom-class"
-    
     />
   );
 }
