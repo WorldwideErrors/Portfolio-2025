@@ -1,11 +1,11 @@
 "use client";
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 
 interface TitleProps {
   name: string;
   color?: string; // optional fill color
-  childVariant?: unknown; // optional Framer Motion variants
+  childVariant?: Variants; // optional Framer Motion variants
 }
 
 export default function Title({
