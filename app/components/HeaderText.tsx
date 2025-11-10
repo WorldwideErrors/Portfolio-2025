@@ -27,7 +27,7 @@ export default function HeaderText() {
       initial="hidden"
       animate="show"
       viewport={{ once: true, amount: 0.5 }}
-      className="self-end xl:max-w-[30%] lg:lg:max-w-[50%] p-4 xl:flex xl:flex-col col gap-4"
+      className="self-end xl:max-w-[30%] lg:lg:max-w-[50%] p-4 xl:flex xl:flex-col col gap-4 xs:pt-10 sm:pt-10 md:pt-10"
     >
       <motion.h1 variants={childVariants} className={`lg:text-4xl text-6xl font-bold ${angkor.className}`}>
         Jeffrey van Tillo
