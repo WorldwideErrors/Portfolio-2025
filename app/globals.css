@@ -1,26 +1,75 @@
 @import "tailwindcss";
 
+/* Light mode */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #F2E5D5;
+  --foreground: #323240;
+  --color-accent: #3596D6;
+  --color-secondary: #BF612A;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-accent: var(--color-accent); 
+  --color-secondary: var(--color-secondary);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
 }
 
-body {
+/* Dark mode */
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #3b3b3b;
+    --foreground: #F2E5D5;
+    --accent: #3596d6;
+    --secondary: #BF612A;
+  }
+} */
+
+/* body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+} */
+
+.nav-link {
+  background-color: transparent; 
+  color: var(--foreground);
+  transition: all 0.2s ease-in-out;
+  font-size: small;
+}
+
+.nav-link:hover {
+  /* background-color: transparent; subtle see-through */
+  box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.2); /* pressed look */
+}
+
+@keyframes rainbow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-rainbow:hover {
+  background: linear-gradient(
+    270deg,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+  background-size: 1400% 1400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow 6s linear infinite;
+  font-weight: bolder;
 }
