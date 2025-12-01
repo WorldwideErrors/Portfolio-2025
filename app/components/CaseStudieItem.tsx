@@ -1,8 +1,7 @@
 "use client";
 
 import { motion, Variants } from "framer-motion";
-import Link from "next/link";
-import { gilda, angkor } from "../fonts";
+import { angkor } from "../fonts";
 
 const childVariant: Variants = {
   hidden: { opacity: 0, x: 70 },
