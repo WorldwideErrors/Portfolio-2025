@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: {
     template: 'Jeffree | %s',
-    default: 'Home',
+    default: 'Jeffree | Home',
   },
   description: "Portfolio website of Jeffrey van Tillo",
 };
