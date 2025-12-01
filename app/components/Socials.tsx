@@ -42,6 +42,7 @@ export default function Socials({alignment}: SocialsProps ) {
         target="_blank"
         rel="noopener noreferrer"
         className="p-3"
+        aria-label="WhatsApp link"
       >
         {/* child motion wrapper */}
         <motion.span variants={childVariants} className="inline-block">
@@ -56,7 +57,7 @@ export default function Socials({alignment}: SocialsProps ) {
         className="p-3"
       >
         <motion.span variants={childVariants} className="inline-block">
-          <FaGithub className="text-4xl hover:text-accent transition-colors duration-300" />
+          <FaGithub className="text-4xl hover:text-accent transition-colors duration-300" aria-label="github link"/>
         </motion.span>
       </Link>
 
@@ -67,7 +68,7 @@ export default function Socials({alignment}: SocialsProps ) {
         className="p-3"
       >
         <motion.span variants={childVariants} className="inline-block">
-          <FaLinkedin className="xs:text-xl text-4xl hover:text-accent transition-colors duration-300" />
+          <FaLinkedin className="xs:text-xl text-4xl hover:text-accent transition-colors duration-300" aria-label="linkedin link" />
         </motion.span>
       </Link>
     </motion.div>
