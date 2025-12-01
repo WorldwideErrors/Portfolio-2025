@@ -1,5 +1,3 @@
-"use client";
-
 import { AnimatePresence, motion, Variants } from 'framer-motion'
 import React from 'react'
 import Container from '../components/Container';
