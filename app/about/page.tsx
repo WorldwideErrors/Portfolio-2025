@@ -8,9 +8,8 @@ import HomeButton from '../components/HomeButton';
 import Link from 'next/link';
 import { angkor, lux_roman } from '../fonts';
 import Image from 'next/image';
-import { Metadata } from 'next';
 
-export const metadata: Metadata = {
+export const metadata = {
   title: 'About Me',
 };
 

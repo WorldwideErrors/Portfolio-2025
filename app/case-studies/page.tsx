@@ -15,9 +15,8 @@ import { FaNode, FaPaperPlane, FaReact } from 'react-icons/fa';
 import { SiNextdotjs } from 'react-icons/si';
 import { BiLogoTypescript } from 'react-icons/bi';
 import { RiAngularjsFill, RiJavaLine } from 'react-icons/ri';
-import { Metadata } from 'next';
 
-export const metadata: Metadata = {
+export const metadata = {
   title: 'Case Studies',
 };
 
