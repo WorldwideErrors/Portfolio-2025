@@ -1,3 +1,5 @@
+"use client";
+
 import { AnimatePresence, motion, Variants } from 'framer-motion'
 import React from 'react'
 import Container from '../components/Container';
@@ -37,7 +39,7 @@ const Variants_R: Variants = {
   }
 };
 
-export default function page() {
+export default function Page() {
   return (
       <div className="p-6 lg:p-10 ">
         <Container>
