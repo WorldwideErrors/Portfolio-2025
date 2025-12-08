@@ -28,6 +28,11 @@ Toegankelijkheid stond centraal tijdens het project, omdat ik wil duidden op het
 - Typescript
 - Eslint
 
+### Packages
+- Framer-Motion  -> Hiermee beheer ik de animaties
+- Tailwind       -> Voor een gecontroleerde styling
+- React-Icons    -> Voor professionele basis iconen
+
 ## Features
 - Dynamische projecten
 - Custom minimalistische UI-componenten
